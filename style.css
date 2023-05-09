@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: aliceblue;
+    min-height: 100vh;
+    height: 100%;
+}
+#blocolabel{
+     width: 100%; text-align: center;
+}
+#logo{
+  color: aliceblue; background-color: slateblue; text-align: center; font-size: 2.5em; height: 135px; padding: 26px; box-sizing: border-box;
+}
+#conteudo-form{
+    margin-top: 50px; text-align: center; font-size: 1.0em;
+}
+fieldset{
+   border: 5px solid slateblue; height: 70%;
+}
+legend{margin-bottom: 55px;}
+
+input{
+   text-align: center; border-radius: 50px; height: 35px; box-sizing: border-box; display: inline-block;
+}
+label{
+   color: black; margin-left: 35px; min-width: 30%; min-height: 30%; font-size: 19px; text-transform: uppercase; font-weight: 700; 
+}
+button{display: inline-block; text-align: center; margin: 35px; padding: 8px; background: transparent; border-radius: 50px;}
+
+button:hover{background-color: slateblue; color: aliceblue; padding: 10px;}

@@ -1,0 +1,47 @@
+<!--Declaração do tipo de documento e definição da linguagem utilizada -->
+<!DOCTYPE html>
+<html lang="en">
+<!--Definição do cabeçalho da página -->
+<head>
+    <!--Metadados para definir a codificação da página e compatibilidade com o IE-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Metadados para definir o layout em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
+    <title>Calculadora IMC</title>
+    <!--Inclusão do arquivo CSS de estilo-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Definição do corpo da página-->
+<body>
+    <!--Div para exibir o logo-->
+    <div id="logo">Body Mass Index</div>
+    <!--Div para o formulário de cálculo de IMC-->
+    <div id="conteudo-form">
+        <!--Formulário-->
+        <form>
+            <!--Campo para agrupar os inputs-->
+            <fieldset>
+                <!--Legenda do formulário-->
+                <legend>Insira os Dados abaixo</legend>
+                <!--Div para agrupar as labels e inputs-->
+                <div id="blocolabel">
+                    <!--Label e input para a altura-->
+                    <label for="altura">Altura (exemplo: 1.76):</label>
+                    <input type="number" name="alturarr" placeholder="digite sua altura" id="altura">
+                    <!--Label e input para o peso-->
+                    <label for="peso">Peso:</label>
+                    <input type="number" name="pesorr" placeholder="Informe seu peso" id="peso">
+                </div>
+                <!--Botão de submit para realizar o cálculo de IMC-->
+                <button type="submit" autofocus id="send" value="enviar" onclick="calcIMC()">Calcular</button>
+                <!--Div para exibir o resultado do IMC-->
+                <h1 id="resultado_IMC"></h1>
+            </fieldset>
+        </form>
+    </div>
+    <!--Inclusão do arquivo JavaScript para realizar o cálculo de IMC-->
+    <script src="bmicalc.js"></script>
+</body>
+</html>
