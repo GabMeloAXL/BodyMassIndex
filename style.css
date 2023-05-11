@@ -29,3 +29,10 @@ label{
 button{display: inline-block; text-align: center; margin: 35px; padding: 8px; background: transparent; border-radius: 50px;}
 
 button:hover{background-color: slateblue; color: aliceblue; padding: 10px;}
+
+#tabelaimc{
+   text-align: center; width: clamp(45%, 60%, 70%); margin-top: 3%; margin-left: 25%;
+}
+#titulo{
+   font-size: 32px; box-sizing: content-box; padding: 5px; 
+}

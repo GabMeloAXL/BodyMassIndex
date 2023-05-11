@@ -35,13 +35,28 @@
                     <input type="number" name="pesorr" placeholder="Informe seu peso" id="peso">
                 </div>
                 <!--Botão de submit para realizar o cálculo de IMC-->
-                <button type="submit" autofocus id="send" value="enviar" onclick="calcIMC()">Calcular</button>
+                <button type="submit" autofocus id="send" value="enviar">Calcular</button>
                 <!--Div para exibir o resultado do IMC-->
                 <h1 id="resultado_IMC"></h1>
             </fieldset>
         </form>
     </div>
+    <div id="tabelaimc"><table><thead><td colspan="3" id="titulo">Confira a tabela de IMC</td></thead>
+    <tbody>
+        <tr style="background-color: slateblue; color: aliceblue;"><td colspan="2">IMC</td><td colspan="2">CLASSIFICAÇÃO</td><td colspan="2">GRAU DE OBESIDADE</td></tr>
+        <tr style="background-color: aliceblue;" id="tr1"><td colspan="2">menor que 18</td><td colspan="2">Magreza</td><td colspan="2">0</td></tr>
+        <tr style="background-color: aliceblue;" id="tr2"><td colspan="2">entre 18.5 e 24.99</td> <td colspan="2">Normal</td><td colspan="2">0</td></tr>
+        <tr style="background-color: aliceblue;" id="tr3"><td colspan="2">entre 25 e 29.99</td> <td colspan="2">Sobrepeso</td><td colspan="2">0</td></tr>
+        <tr style="background-color: aliceblue;" id="tr4"><td colspan="2">entre 30 e 34.99</td> <td colspan="2">Obesidade</td><td colspan="2">I</td></tr>
+        <tr style="background-color: aliceblue;" id="tr5"><td colspan="2">entre 35 e 39.99</td> <td colspan="2">Obesidade</td><td colspan="2">II</td></tr>
+        <tr style="background-color: aliceblue;" id="tr6"><td colspan="2">maior que 40</td> <td colspan="2">Obesidade grave</td><td colspan="2">III</td></tr>
+    </tbody>
+    
+    
+    </table></div>
+
     <!--Inclusão do arquivo JavaScript para realizar o cálculo de IMC-->
     <script src="bmicalc.js"></script>
+    
 </body>
 </html>
